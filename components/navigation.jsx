@@ -11,22 +11,32 @@ export function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "about", "resume", "projects", "contact"]
+      const sections = ["hero", "about", "resume", "projects", "publications", "contact"]
       const scrollPosition = window.scrollY + 100
+
+      // Find the last section that has been scrolled past
+      let currentSection = sections[0]
 
       for (const section of sections) {
         const element = document.getElementById(section)
         if (element) {
-          const { offsetTop, offsetHeight } = element
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
+          // If the top of the section is above the current scroll position, update currentSection
+          if (element.offsetTop <= scrollPosition) {
+            currentSection = section
+          } else {
+            // Once we find a section that's below the scroll position, we can stop checking
             break
           }
         }
       }
+
+      setActiveSection(currentSection)
     }
 
     window.addEventListener("scroll", handleScroll)
+    // Initial check when component mounts
+    handleScroll()
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -43,6 +53,7 @@ export function Navigation() {
     { id: "about", label: "About" },
     { id: "resume", label: "Resume" },
     { id: "projects", label: "Projects" },
+    { id: "publications", label: "Publications" },
     { id: "contact", label: "Contact" },
   ]
 

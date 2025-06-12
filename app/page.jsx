@@ -4,6 +4,7 @@ import { ResumeSection } from "@/components/resume-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
 import { Navigation } from "@/components/navigation"
+import { PublicationsSection } from "@/components/publications-section"
 
 export default function LandingPage() {
   return (
@@ -23,6 +24,8 @@ export default function LandingPage() {
 
         {/* Projects Section */}
         <ProjectsSection />
+         {/* Publications Section */}
+        <PublicationsSection />
 
         {/* Contact Section */}
         <ContactSection />

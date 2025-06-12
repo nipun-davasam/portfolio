@@ -5,17 +5,16 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Alex Johnson - Full Stack Developer & UI/UX Designer",
+  title: "Nipun Davasam - Full Stack Developer & Software Engineer",
   description:
-    "Portfolio of Alex Johnson, a passionate Full Stack Developer and UI/UX Designer specializing in modern web technologies and beautiful user experiences.",
-  keywords: "full stack developer, ui/ux designer, react, next.js, portfolio, web development",
-  authors: [{ name: "Alex Johnson" }],
+    "Portfolio of Nipun Davasam, a passionate Full Stack Developer and Software Engineer specializing in modern web technologies and beautiful user experiences.",
+  keywords: "full stack developer, react, next.js, portfolio, web development",
+  authors: [{ name: "Nipun Davasam" }],
   openGraph: {
-    title: "Alex Johnson - Full Stack Developer & UI/UX Designer",
+    title: "Nipun Davasam - Full Stack Developer & Software Engineer",
     description: "Portfolio showcasing modern web development projects and design work",
     type: "website",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {

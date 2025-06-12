@@ -209,7 +209,7 @@ export function ResumeModal({ isOpen, onClose, onDownload }) {
                   <ExternalLink className="w-4 h-4" />
                   <span>{contactInfo.linkedin}</span>
                 </div>
-                <span>IEEE | {contactInfo.github}</span>
+                {/* <span>IEEE | {contactInfo.github}</span> */}
               </div>
             </div>
 

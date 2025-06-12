@@ -56,7 +56,7 @@ export function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "nipun.davasam.com",
+      value: "nipun.davasam@gmail.com",
       href: "#",
     },
     {
@@ -77,25 +77,19 @@ export function ContactSection() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/username",
+      href: "https://github.com/nipun-davasam",
       color: "hover:text-gray-900",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/username",
+      href: "https://www.linkedin.com/in/nipun-davasam/",
       color: "hover:text-blue-600",
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/username",
-      color: "hover:text-blue-400",
-    },
+    },   
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:alex.johnson@email.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=nipun.davasam@gmail.com",
       color: "hover:text-emerald-600",
     },
   ]
@@ -203,7 +197,7 @@ export function ContactSection() {
                       <div>
                         <p className="text-sm text-gray-500 dark:text-gray-400">{info.label}</p>
                         <a
-                          href={info.href}
+                          
                           className="text-gray-900 dark:text-gray-50 hover:text-emerald-600 transition-colors"
                         >
                           {info.value}
@@ -220,7 +214,7 @@ export function ContactSection() {
                   <CardTitle className="text-2xl text-gray-900 dark:text-gray-100">Connect With Me</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-3 gap-4">
                     {socialLinks.map((social, index) => (
                       <a
                         key={social.label}

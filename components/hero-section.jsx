@@ -33,21 +33,21 @@ export function HeroSection() {
           }`}
         >
           {/* Profile Photo */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="my-1 flex justify-center">
+            <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-105 transition-transform duration-300">
               <Image
                 src="/profile pic.JPG"
                 alt="Professional headshot"
                 width={240}
                 height={240}
-                className="object-cover rounded-full"
+                className="object-fit "
                 priority
               />
             </div>
           </div>
 
           {/* Introduction */}
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-5">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
               Hi, I'm{" "}
               <span className="text-emerald-600 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
@@ -95,7 +95,7 @@ export function HeroSection() {
           {/* CTA Button */}
           <Button
             size="lg"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 text-lg"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 text-lg mb-5"
             onClick={scrollToAbout}
           >
             Explore My Work
@@ -104,7 +104,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute mt-2 bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button
           onClick={scrollToAbout}
           className="text-emerald-600 hover:text-emerald-700"
