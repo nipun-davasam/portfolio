@@ -13,12 +13,12 @@ export function ThemeToggle() {
     setMounted(true)
   }, [])
 
-  useEffect(() => {
-    if (!mounted) return
-    if (!theme) {
-      setTheme("dark")
-    }
-  }, [mounted, theme, setTheme])
+  // useEffect(() => {
+  //   if (!mounted) return
+  //   if (!theme) {
+  //     setTheme("dark")
+  //   }
+  // }, [mounted, theme, setTheme])
 
   if (!mounted) {
     return (
