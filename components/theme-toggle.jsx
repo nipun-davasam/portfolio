@@ -13,13 +13,6 @@ export function ThemeToggle() {
     setMounted(true)
   }, [])
 
-  // useEffect(() => {
-  //   if (!mounted) return
-  //   if (!theme) {
-  //     setTheme("dark")
-  //   }
-  // }, [mounted, theme, setTheme])
-
   if (!mounted) {
     return (
       <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
