@@ -8,11 +8,7 @@ import { useEffect, useState } from "react"
 export function ThemeToggle() {
   const { theme, setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    if (typeof window !== "undefined" && !localStorage.getItem("theme")) {
-      setTheme("dark")
-    }
-  }, [setTheme])
+
   useEffect(() => {
     setMounted(true)
   }, [])
