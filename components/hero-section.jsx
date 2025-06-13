@@ -36,7 +36,7 @@ export function HeroSection() {
           <div className="my-1 flex justify-center">
             <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-105 transition-transform duration-300">
               <Image
-                src="/profile pic.JPG"
+                src="/profile_pic.jpg"
                 alt="Professional headshot"
                 width={240}
                 height={240}
